@@ -1,57 +1,112 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #f2f2f2;
 }
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
     background-color: #fff;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px;
 }
 
-h1 {
-    margin: 10px 0;
+header h3 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .social-links {
-    margin-top: 10px;
-}
-
-.social-links a {
-    margin-right: 10px;
-    color: #333;
-    text-decoration: none;
-}
-
-.resume-content {
-    margin-top: 20px;
-}
-
-article {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-h2 {
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Hover effect: Increase size */
+}
+
+.resume-content h2 {
+    color: #007bff;
+    font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow effect */
 }
 
-ul {
+.resume-content p {
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: opacity 0.3s ease; /* Fade-in effect */
+}
+
+.resume-content p:hover {
+    opacity: 0.8; /* Fade-out on hover */
+}
+
+.resume-content ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
 }
 
-ul li {
+.resume-content ul li {
+    color: #555;
+    font-size: 16px;
     margin-bottom: 5px;
+    border-bottom: 1px dashed #ccc; /* Border effect */
 }
 
-/* Add cursor styling here if necessary */
+.resume-content ul li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.container {
+    transition: box-shadow 0.3s ease; /* Box shadow effect */
+}
+
+.container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.header {
+    transition: transform 0.3s ease; /* Header transform effect */
+}
+
+.header:hover {
+    transform: rotate(5deg); /* Rotate header on hover */
+}
+
+.social-links a:last-child {
+    transition: all 0.3s ease; /* All social link effects */
+}
+
+.social-links a:last-child:hover {
+    transform: scale(1.1); /* Increase size */
+    background-color: #ff5c5c; /* Change color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    border-radius: 20%; /* Change border radius */
+}
